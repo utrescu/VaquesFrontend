@@ -34,7 +34,7 @@ namespace VaquesBackend
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "VaquesBackend", Version = "v1" });
             });
 
-            services.AddScoped<ICampService, CampService>();
+            services.AddSingleton<ICampService, CampService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
